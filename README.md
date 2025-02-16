@@ -28,15 +28,15 @@
 3. Выполнить отладку
 4. Перейти в браузер
 
-<p align="center"><img  src="./images/main.jpg" width="40%"></p>
+<p align="center"><img  src="./images/main.jpg" width="70%"></p>
 
 5. Просмотреть данные о турах:
    
-<p align="center"><img  src="./images/tours.jpg" width="40%"></p>
+<p align="center"><img  src="./images/tours.jpg" width="70%"></p>
 
 6. Просмотреть данные о типах:
    
-<p align="center"><img  src="./images/types.jpg" width="40%"></p>
+<p align="center"><img  src="./images/types.jpg" width="70%"></p>
 
 ## Авторы
-* **Сухарева Анжелика** - *разработчик API* - [Lera_Batrakova](https://github.com/AngieReee) 
+* **Сухарева Анжелика** - *разработчик API* - [Сухарева Анжелика](https://github.com/AngieReee) 
