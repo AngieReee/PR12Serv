@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ServerPart_Tours.Models;
 
-public partial class _43pToursContext : DbContext
+public partial class PostgresContext : DbContext
 {
-    public _43pToursContext()
+    public PostgresContext()
     {
     }
 
-    public _43pToursContext(DbContextOptions<_43pToursContext> options)
+    public PostgresContext(DbContextOptions<PostgresContext> options)
         : base(options)
     {
     }
@@ -27,10 +27,12 @@ public partial class _43pToursContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=edu.pg.ngknn.local;Port=5432;Database=43P_Tours;Username=43P;Password=444444");
+        => optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=12345");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasPostgresExtension("pgagent", "pgagent");
+
         modelBuilder.Entity<Country>(entity =>
         {
             entity.HasKey(e => e.Code).HasName("newtable_pk");

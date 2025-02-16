@@ -7,8 +7,9 @@ namespace ServerPart_Tours.Repositories
     /// </summary>
     public class BaseRepository
     {
-        readonly protected _43pToursContext baseContext;
-        public BaseRepository(_43pToursContext baseContext) {
+        readonly protected PostgresContext baseContext;
+        public BaseRepository(PostgresContext baseContext)
+        {
             this.baseContext = baseContext;
         }
     }

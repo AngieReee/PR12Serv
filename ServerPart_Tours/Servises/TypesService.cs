@@ -3,22 +3,19 @@ using ServerPart_Tours.Repositories;
 
 namespace ServerPart_Tours.Servises
 {
-    public class ToursService
+    
+    public class TypesService
     {
-        readonly ToursRepository repository;
+        readonly TypesRepository repository;
 
-        public ToursService(ToursRepository repository)
+        public TypesService(TypesRepository repository)
         {
             this.repository = repository;
         }
 
-        /// <summary>
-        /// преобразование списка со всеми турами в json
-        /// </summary>
-        /// <returns></returns>
-        public async Task<IResult> GetToursList() => Results.
+        public async Task<IResult> GetTypesList() => Results.
             Text(JsonConvert.SerializeObject(
-                await repository.GetTours(),
+                await repository.GetToursTypes(),
                 Formatting.Indented,
                 new JsonSerializerSettings
                 {
