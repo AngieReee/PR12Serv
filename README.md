@@ -20,7 +20,7 @@
 ### Установка
 
 Для установки проекта нужно скопировать репозиторий в проект Visual Stido по ссылке: 
-[(https://github.com/AngieReee/PR12Serv/tree/master)]
+(https://github.com/AngieReee/PR12Serv/tree/master)
 
 ## Инструкция
 1. Запустить проект в Visual Studio 2022
